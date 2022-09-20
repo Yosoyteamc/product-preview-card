@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-cyan: hsl(160, 36%, 20%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+}
+
+.target-content{
+    width: 345px;
+    height: 640px;
+    margin: 30px auto;
+}
+
+.image__image{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.target-content__image{
+    width: 100%;
+    height: 240px
+}
+
+.target-content__details{
+    height: 370px;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.details__type{
+    padding: 5px 0 20px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}
+
+.details__title{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    margin-bottom: 25px;
+}
+
+.details__details{
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    line-height: 1.7em;
+    margin-bottom: 35px;
+}
+
+.details__prices{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: var(--Dark-cyan);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.details__descount{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.details__button{
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+}
+
+.details__button:hover{
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+
+.details__button img {
+    margin: 10px;
+}
+
+.attribution { 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 11px; 
+    text-align: center; 
+    padding: 20px 0;
+    margin: auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1115px) {
+
+    .target-content{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 100px auto;
+    }
+    
+    .image__image{
+        width: 300px;   
+        content: url(../images/image-product-desktop.jpg);     
+        border-radius:  15px 0px 0px 15px ;
+    }
+    
+    .target-content__details{
+        height: 390px;    
+        padding: 30px;
+        border-radius:  0px 15px 15px 0px ;
+    }
+
+    .details__prices{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .target-content{
+        margin: 170px auto;
+    }
+}
